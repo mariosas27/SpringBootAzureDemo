@@ -1,12 +1,13 @@
 package com.example.SpringBootAzureDemo.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class userController {
-    @RequestMapping("/home")
-    public String getHome(){
-        return "index.html";
+    @RequestMapping("/usuario")
+    public String getUsuario(){
+        return "Juan Mario";
     }
 }
